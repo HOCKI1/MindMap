@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: local('Poppins'),
+        url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+body{
+    background: rgb(27, 27, 27);
+    margin: 0;
+    padding: 0;
+    font: 1em/1.4em sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+a{text-decoration: none;}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.side{
+    width: 200px;
+    margin: 20px;
+    display:inline-block;
+}
+    /*Дизайн верхней хуйни(хз как назвать)*/
+
+.upper{
+    padding-left:50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Дизайн выбора движка*/
+
+.menu a{
+    background: #2a2a2a;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid rgb(27, 27, 27);
+    transition: 0.5s all;
+}
+
+.menu a:hover{
+    background-color: #3d3d3d;
+    padding: 10px 0 10px 20px;
+}
+
+
+.menu li:first-child a{
+    border-radius: 5px 5px 0 0;
+}
+.menu li:last-child a{
+    border-radius: 0 0 5px 5px;
+    border-bottom: 0;
+}
+.menu__drop li:first-child a{
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid rgb(27, 27, 27);
+}
+.menu__drop li:last-child a{
+    border-radius: 0 0 5px 5px;
+    border-bottom: 0;
+    
+
+}
+.menu__drop2 li:first-child a{
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid rgb(27, 27, 27);
+}
+.menu__drop2 li:last-child a{
+    border-radius: 0 0 5px 5px;
+    border-bottom: 0;
+    
+    
+}
+
+/*Дизайн выбора типа игры*/
+
+.menu__list{
+    position: relative;
+}
+
+.menu__drop{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: -9999em;
+    opacity: 0;
+    border-left: 5px solid transparent;
+    transition: 0.5s opacity;
+}
+
+.menu__list:hover .menu__drop{
+    opacity: 1;
+    top: 0;
+}
+
+/*Дизайн выбора гайда*/
+
+.menu__list2{
+    position: relative;
+}
+
+.menu__drop2{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: -9999em;
+    opacity: 0;
+    border-left: 5px solid transparent;
+    transition: 0.5s opacity;
+}
+
+.menu__list2:hover .menu__drop2{
+    opacity: 1;
+    top: 0;
+}
